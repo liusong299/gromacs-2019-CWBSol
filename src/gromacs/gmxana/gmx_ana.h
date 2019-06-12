@@ -81,6 +81,9 @@ int
 gmx_densmap(int argc, char *argv[]);
 
 int
+gmx_3drism(int argc, char *argv[]);
+
+int
 gmx_densorder(int argc, char *argv[]);
 
 int
