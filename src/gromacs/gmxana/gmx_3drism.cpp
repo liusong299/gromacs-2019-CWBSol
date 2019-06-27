@@ -74,13 +74,6 @@ int gmx_3drism(int argc, char *argv[])
         "here we propose the D2MSA closure to incorporate the short-range and long-range interactions with the D2 closure and the mean spherical approximation, respectively.",
         "We demonstrate that our new theory can compute the solvent distributions around real hydrophobic solutes in water and complex organic solvents that agree well with the explicit solvent molecular dynamics simulations."};
 
-    if (argc > 1)
-    {
-        //argv[0] = "/Users/stephen/projects_local/gromacs-2019/src/gromacs/rismhi3d/rismhi3d";
-        //execv(argv[0], argv);
-
-    }
-
     return main_3drism(argc, argv);
 }
 
