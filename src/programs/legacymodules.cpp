@@ -266,8 +266,10 @@ void registerLegacyModules(gmx::CommandLineModuleManager *manager)
                    "Calculate the density of the system");
     registerModule(manager, &gmx_densmap, "densmap",
                    "Calculate 2D planar or axial-radial density maps");
+    #if GMX_DOUBLE
     registerModule(manager, &gmx_3drism, "3drism",
-                   "Test of 3DRISM module");
+                   "3DRISM: compute solvent structure around hydrophobic solutes with proper treatment of solute–solvent electrostatic interactions");
+    #endif
     registerModule(manager, &gmx_densorder, "densorder",
                    "Calculate surface fluctuations");
     registerModule(manager, &gmx_dielectric, "dielectric",

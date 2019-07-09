@@ -62,7 +62,6 @@
 #include "../3drismhi/rismhi3d.cpp"
 
 //int main_3drism(int argc, char *argv[]);
-
 int gmx_3drism(int argc, char *argv[])
 {
     const char *desc[] = {
@@ -76,5 +75,3 @@ int gmx_3drism(int argc, char *argv[])
 
     return main_3drism(argc, argv);
 }
-
-

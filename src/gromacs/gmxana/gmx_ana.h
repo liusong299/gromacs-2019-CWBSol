@@ -80,8 +80,10 @@ gmx_density(int argc, char *argv[]);
 int
 gmx_densmap(int argc, char *argv[]);
 
+#if GMX_DOUBLE
 int
 gmx_3drism(int argc, char *argv[]);
+#endif
 
 int
 gmx_densorder(int argc, char *argv[]);
