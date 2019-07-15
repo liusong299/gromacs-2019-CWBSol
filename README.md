@@ -57,7 +57,6 @@ gmx_d cwbsol -solvent tip3p.gaff -solute ala2.solute -nr 30x30x30 -traj ala2.pdb
 ```
 
 ## Deployment
-
 CWBSol method is developed for Gromacs 2019 by [Prof. Xuhui Huang's group](http://compbio.ust.hk) 
 
 ## Authors
