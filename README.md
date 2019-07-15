@@ -60,10 +60,6 @@ gmx_d cwbsol -solvent tip3p.gaff -solute ala2.solute -nr 30x30x30 -traj ala2.pdb
 
 CWBSol method is developed for Gromacs 2019 by [Prof. Xuhui Huang's group](http://compbio.ust.hk) 
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
 ## Authors
 * **Prof. Xuhui Huang** - *Project leader* - [xuhuihuang](http://compbio.ust.hk/public_html/pmwiki-2.2.8/pmwiki.php?n=People.XuhuiHuang)
 * **Dr. Siqin Cao** - *main developer* - [seechin](https://github.com/seechin)
