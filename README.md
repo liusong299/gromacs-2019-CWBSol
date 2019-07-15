@@ -1,4 +1,5 @@
 # Gromacs CWBSol
+![alt text](https://github.com/liusong299/gromacs-2019-CWBSol/blob/master/CWBSol_logo.png?raw=true)
 The original release of CWBSol method with Gromacs 2019
 
 ## Getting Started
@@ -12,7 +13,7 @@ The 3D reference interaction site model (CWBSol) is a powerful tool to study the
 
 #### II.Installing
 
-Introduction to building GROMACS with CWBSol method.These instructions pertain to building GROMACS 2019 with CWBSol method. You might also want to check the up-to-date installation instructions from [original Gromacs installation]().
+Introduction to building GROMACS with CWBSol method.These instructions pertain to building GROMACS 2019 with CWBSol method. You might also want to check the up-to-date installation instructions from [original Gromacs installation](Gromacs_README).
 
 ----------------------------
 
