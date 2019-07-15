@@ -82,7 +82,7 @@ gmx_densmap(int argc, char *argv[]);
 
 #if GMX_DOUBLE
 int
-gmx_3drism(int argc, char *argv[]);
+gmx_cwbsol(int argc, char *argv[]);
 #endif
 
 int
