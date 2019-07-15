@@ -12,7 +12,7 @@ The 3D reference interaction site model (CWBSol) is a powerful tool to study the
 
 #### II.Installing
 
-Introduction to building GROMACS with CWBSol method.These instructions pertain to building GROMACS 2019 with CWBSol method. You might also want to check the up-to-date installation instructions from original Gromacs installation.
+Introduction to building GROMACS with CWBSol method.These instructions pertain to building GROMACS 2019 with CWBSol method. You might also want to check the up-to-date installation instructions from [original Gromacs installation]().
 
 ----------------------------
 
