@@ -1,0 +1,290 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Gromacs CWBSol &mdash; gromacs-2019-CWBSol  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> gromacs-2019-CWBSol
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Gromacs CWBSol</a><ul>
+<li><a class="reference internal" href="#getting-started">Getting Started</a><ul>
+<li><a class="reference internal" href="#prerequisites">Prerequisites</a><ul>
+<li><a class="reference internal" href="#i-package-requirement">I. Package requirement</a></li>
+<li><a class="reference internal" href="#ii-installing">II.Installing</a></li>
+<li><a class="reference internal" href="#iii-examples">III. Examples</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#deployment">Deployment</a></li>
+<li><a class="reference internal" href="#authors">Authors</a></li>
+<li><a class="reference internal" href="#license">License</a></li>
+<li><a class="reference internal" href="#acknowledgments">Acknowledgments</a></li>
+<li><a class="reference internal" href="#references">References:</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">gromacs-2019-CWBSol</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Gromacs CWBSol</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/README.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="gromacs-cwbsol">
+<h1>Gromacs CWBSol<a class="headerlink" href="#gromacs-cwbsol" title="Permalink to this headline">¶</a></h1>
+<p><img alt="https://github.com/liusong299/gromacs-2019-CWBSol/blob/master/CWBSol_logo.png?raw=true" src="https://github.com/liusong299/gromacs-2019-CWBSol/blob/master/CWBSol_logo.png?raw=true" />alt text
+The original release of CWBSol method with Gromacs 2019</p>
+<div class="section" id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<p>The 3D reference interaction site model (CWBSol) is a powerful tool to study the thermodynamic and structural properties of liquids. However, for hydrophobic solutes, the inhomogeneity of the solvent density around them poses a great challenge to the 3DRISM-HI theory. To address this issue, we have previously introduced the hydrophobic-induced density inhomogeneity theory (HI) for purely hydrophobic solutes. To further consider the complex hydrophobic solutes containing partial charges, here we propose the D2MSA closure to incorporate the short-range and long-range interactions with the D2 closure and the mean spherical approximation, respectively. We demonstrate that our new theory can compute the solvent distributions around real hydrophobic solutes in water and complex organic solvents that agree well with the explicit solvent molecular dynamics simulations.</p>
+<div class="section" id="prerequisites">
+<h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="i-package-requirement">
+<h4>I. Package requirement<a class="headerlink" href="#i-package-requirement" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p><a class="reference external" href="http://www.fftw.org">FFTW3</a> with double precision (required)</p></li>
+<li><p><a class="reference external" href="http://www.gromacs.org">GROMACS 2019</a> (required)</p></li>
+</ul>
+</div>
+<div class="section" id="ii-installing">
+<h4>II.Installing<a class="headerlink" href="#ii-installing" title="Permalink to this headline">¶</a></h4>
+<p>Introduction to building GROMACS with CWBSol method.These instructions pertain to building GROMACS 2019 with CWBSol method. You might also want to check the up-to-date installation instructions from <a class="reference external" href="Gromacs_README">original Gromacs installation</a>.</p>
+<hr class="docutils" />
+<ol class="simple">
+<li><p>Get the latest version of your C and C++ compilers.</p></li>
+<li><p>Check that you have CMake version 3.4.3 or later.</p></li>
+<li><p>Get and unpack the latest version of the GROMACS tarball.</p></li>
+<li><p>Make a separate build directory and change to it.</p></li>
+<li><p>Run “cmake” with the path to the source as an argument</p></li>
+<li><p>Run “make”, “make check”, and “make install”</p></li>
+<li><p>Source “GMXRC” to get access to GROMACS</p></li>
+</ol>
+<p>Or, as a sequence of commands to execute:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>   <span class="n">tar</span> <span class="n">xfz</span> <span class="n">gromacs</span><span class="o">-</span><span class="mf">2019.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+   <span class="n">cd</span> <span class="n">gromacs</span><span class="o">-</span><span class="mi">2019</span>
+   <span class="n">mkdir</span> <span class="n">build</span>
+   <span class="n">cd</span> <span class="n">build</span>
+   <span class="n">cmake</span> <span class="o">..</span> <span class="o">-</span><span class="n">DGMX_DOUBLE</span><span class="o">=</span><span class="n">ON</span> <span class="o">-</span><span class="n">DGMX_BUILD_OWN_FFTW</span><span class="o">=</span><span class="n">ON</span> <span class="o">-</span><span class="n">DREGRESSIONTEST_DOWNLOAD</span><span class="o">=</span><span class="n">ON</span>
+   <span class="n">make</span>
+   <span class="n">make</span> <span class="n">check</span>
+   <span class="n">sudo</span> <span class="n">make</span> <span class="n">install</span>
+   <span class="n">source</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">gromacs</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">GMXRC</span>
+</pre></div>
+</div>
+<p>This will download and build first the prerequisite FFT library
+followed by GROMACS. If you already have FFTW installed, you can remove that argument to “cmake”. Overall, this build of GROMACS will be correct and reasonably fast on the machine upon which “cmake” ran.
+On another machine, it may not run, or may not run fast. If you want to get the maximum value for your hardware with GROMACS, you will have to read further. Sadly, the interactions of hardware, libraries, and compilers are only going to continue to get more complex.</p>
+</div>
+<div class="section" id="iii-examples">
+<h4>III. Examples<a class="headerlink" href="#iii-examples" title="Permalink to this headline">¶</a></h4>
+<p>The example of CWBSol method is located in <em>‌cwbsol_example</em> folder.
+Running this example by command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">gmx_d</span> <span class="n">cwbsol</span> <span class="o">-</span><span class="n">solvent</span> <span class="n">tip3p</span><span class="o">.</span><span class="n">gaff</span> <span class="o">-</span><span class="n">solute</span> <span class="n">ala2</span><span class="o">.</span><span class="n">solute</span> <span class="o">-</span><span class="n">nr</span> <span class="mi">30</span><span class="n">x30x30</span> <span class="o">-</span><span class="n">traj</span> <span class="n">ala2</span><span class="o">.</span><span class="n">pdb</span> <span class="o">-</span><span class="n">cmd</span> <span class="n">closure</span><span class="o">=</span><span class="n">kh</span> <span class="n">rism</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="deployment">
+<h2>Deployment<a class="headerlink" href="#deployment" title="Permalink to this headline">¶</a></h2>
+<p>CWBSol method is developed for Gromacs 2019 by <a class="reference external" href="http://compbio.ust.hk">Prof. Xuhui Huang’s group</a></p>
+</div>
+<div class="section" id="authors">
+<h2>Authors<a class="headerlink" href="#authors" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Prof. Xuhui Huang</strong> - <em>Project leader</em> - <a class="reference external" href="http://compbio.ust.hk/public_html/pmwiki-2.2.8/pmwiki.php?n=People.XuhuiHuang">xuhuihuang</a></p></li>
+<li><p><strong>Dr. Siqin Cao</strong> - <em>main developer</em> - <a class="reference external" href="https://github.com/seechin">seechin</a></p></li>
+<li><p><strong>Mr. Song Liu</strong> - <em>developer</em> -<a class="reference external" href="https://github.com/liusong299/">liusong299</a></p></li>
+</ul>
+<p>See also the list of <a class="reference external" href="https://github.com/liusong299/gromacs-2019-CWBSol/graphs/contributors">contributors</a> who participated in this project.</p>
+</div>
+<div class="section" id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<p>This project is licensed under the GPL License - see the <a class="reference external" href="LICENSE">LICENSE</a> file for details</p>
+</div>
+<div class="section" id="acknowledgments">
+<h2>Acknowledgments<a class="headerlink" href="#acknowledgments" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="references">
+<h2>References:<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Siqin Cao, Fu Kit Sheong, and Xuhui Huang, “Reference interaction site model with hydrophobicity induced density inhomogeneity: An analytical theory to compute solvation properties of large hydrophobic solutes in the mixture of polyatomic solvent molecules”, Journal of Chemical Physics 143, 054110 (2015)</p></li>
+<li><p>Siqin Cao, Lizhe Zhu and Xuhui Huang, 3DRISM-HI-D2MSA: an improved analytic theory to compute solvent structure around hydrophobic solutes with proper treatment of solute–solvent electrostatic interactions, Mol. Phys. 116, 1003 (2017)</p></li>
+<li><p>Siqin Cao, Kirill Konovalov, Ilona Christy Unarta and Xuhui Huang, Recent Developments in Integral Equation Theory for Solvation to Treat Density Inhomogeneity at Solute-Solvent Interface, Advanced Theory and Simulations (2019) DOI: 10.1002/adts.201900049</p></li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Prof. Xuhui Huang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
